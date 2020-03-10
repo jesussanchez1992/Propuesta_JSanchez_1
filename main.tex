@@ -1,0 +1,136 @@
+\documentclass[a4paper,12pt,twoside]{report}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multirow, array} 
+\usepackage{chngcntr}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{cite}
+\usepackage{adjustbox}
+\usepackage[table]{xcolor}
+\usepackage{braket}
+\usepackage{lipsum}
+
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=magenta,
+    citecolor=blue
+}
+
+\title{}
+\begin{document}
+\begin{center}
+\thispagestyle{empty}
+\fontsize{12pt}{12pt}\selectfont 
+
+%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\textbf {\huge Calibración del espectrografo EShel- II PF0011}
+%\huge
+
+\vspace{3cm}
+
+
+{\large \textbf{Autor:}}
+
+\vspace{0.5cm}
+
+\large Jesús Alberto Sánchez Villafrades$^{1,2}$
+
+\vspace{3cm}
+
+{\large \textbf{Director}}\\
+
+\vspace{0.5cm}
+
+{\large Director: Luis Alberto Núñez$^{1,2}$}\\
+
+\vspace{0.5cm}
+
+{\large \textbf{Codirector}}\\
+
+\vspace{0.5cm}
+
+{\large Juan Pablo Uchima Tamayo $^{3}$}
+
+\vspace{3cm}
+
+\normalsize
+
+\large Propuesta de trabajo de grado para optar al t\'itulo de F\'isico
+
+
+\vspace{4cm}
+
+
+
+\large $^1$Grupo de Investigaci\'on en Relatividad y Gravitaci\'on GIRG \\
+\large  $^2$Grupo Halley de Astronom\'ia y Ciencias Aeroespaciales \\
+\large  $^3$Universidad de la Serena \\
+\large  Escuela de Física - 2020
+  \end{center}
+  
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%FIN  DE LA PORTADA    %%%
+%\leavevmode\thispagestyle{empty}\newpage
+
+\newpage
+
+%------------- Documento --------------
+%%%%%%%%%%% PARA LA TESIS FINAL
+\pagenumbering{roman}
+\setcounter{page}{2}
+%\input{Nota.tex}
+%\input{Autorización}
+%\addcontentsline{toc}{chapter}{Dedicatoria}
+%\input{Dedicatoria.tex}
+%\addcontentsline{toc}{chapter}{Agradecimientos}
+%\input{Agradecimientos.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents % indice de contenidos
+\cleardoublepage
+%\addcontentsline{toc}{chapter}{Lista de figuras}
+\listoffigures % indice de figuras
+%\addcontentsline{toc}{chapter}{Lista de tablas}
+\listoftables % indice de tablas
+%\addcontentsline{toc}{chapter}{Lista de símbolos}
+%\input{Symbols/Symbols}
+%\addcontentsline{toc}{chapter}{Resumen}
+\input{resumen.tex}
+%\addcontentsline{toc}{chapter}{Abstract}
+\input{Abstract.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Cambio de Numeración
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{intro.tex}
+\input{Objetivos}
+\input{chapters/Marco_teorico}
+\input{chapters/Metodologia}
+\input{chapters/Conclusiones.tex}
+%\input{chapters/APENDICE_A.tex}
+%\input{chapters/APENDICE_B.tex}
+%\input{chapters/APENDICE_C.tex}
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%% Bibliografia %%%%%%%%%%%%%%%%%%%%%5
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliografía}%para que aparezca en la tabla de contenidos
+\bibliographystyle{unsrt}
+\bibliography{Bibliography/Tesis.bib}
+%Archivo con las referencias bibliográficas, creado en JabRef (o manualmente)
+
+\end{document}
